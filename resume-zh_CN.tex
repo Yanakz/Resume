@@ -1,0 +1,112 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+\renewcommand{\refname}{发表论文}
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{梁浩然}
+
+% {E-mail}{mobilephone}{homepage}
+% be careful of _ in emaill address
+\contactInfo{lhr1988@126.com}{(+86) 15858178219}{应聘职位：网易游戏-人工智能工程师}
+% {E-mail}{mobilephone}
+% keep the last empty braces!
+%\contactInfo{xxx@yuanbin.me}{(+86) 131-221-87xxx}{}
+ 
+\section{\faGraduationCap\  教育背景}\small
+\datedsubsection{\textbf{浙江工业大学}, 杭州}{2011 -- 至今}
+\textit{博士}\ 控制科学与工程, 预计2017年3月毕业, \textit{研究方向：机器学习与模式识别}
+\datedsubsection{\textbf{浙江工业大学}, 杭州}{2007 -- 2011}
+\textit{学士}\ 计算机科学与技术
+
+\section{\faUsers\ 实习/课题研究/项目经历}\small
+\datedsubsection{\textbf{1. 新加坡国立大学}\  \textit{学术交流访问}}{2014年5月 -- 2015年9月}
+进行视觉显著性相关方面的研究，利用计算机视觉相关算法设计视觉显著性模型
+
+\datedsubsection{\textbf{2. 人脸图像合成算法}\ \textit{课题研究项目}}{2012年7月 -- 2013年7月}
+\begin{onehalfspacing}
+	内容：1. 利用二维人脸图像合成三维人脸模型，构建不同表情。 2. 利用手绘草图合成二维人脸素描。
+	\begin{itemize}
+		\item 对于三维人脸合成，基于人脸特征点，对于二维人脸合成，基于图像块特征。
+		\item 使用基于局部坐标编码的耦合字典学习构建模型。
+	\end{itemize}
+
+\datedsubsection{\textbf{3. 视觉显著性相关算法研究}\ \textit{课题研究项目}}{2014年6月 -- 2015年3月}
+\role{}{工作主页： https://www.ece.nus.edu.sg/stfpage/eleqiz/scene.html}
+
+\end{onehalfspacing}
+
+\begin{onehalfspacing}
+内容：研究自然图像的视觉显著性。构建模型，预测人眼在自由观测图像时的关注点。
+\begin{itemize}
+  \item 提取颜色，灰度，梯度， 以及语义级别信息作为图像重要特征。
+  \item 使用SVM建立视觉显著性预测模型，有效预测图片中的人眼关注点。
+\end{itemize}
+\end{onehalfspacing}
+
+
+
+
+\datedsubsection{\textbf{4. 视觉显著性数据可视化}\ \textit{个人项目}}{2016年5月 -- 2016年7月}
+\begin{onehalfspacing}
+	内容：利用三维可视化方法对视觉显著性模型进行可视化分析。
+	\begin{itemize}
+		\item 利用视觉显著性数据构建三维可视化系统，方便分析与教学。
+		\item 使用Three.js实现。
+	\end{itemize}
+\end{onehalfspacing}
+
+% Reference Test
+%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
+%An xxx optimized for xxx\cite{verma2015large}
+%\begin{itemize}
+%  \item main contribution
+%\end{itemize}
+
+\section{\faCogs\ IT 技能}\small
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.5ex]
+  \item 编程语言: Python == Matlab > C++,  平台: Linux > Windows,  办公: \LaTeX, Office
+  \item Github: http://Github: github.com/Yanakz
+\end{itemize}
+
+\section{\faHeartO\ 获奖情况}\small
+\datedline{浙江工业大学2015年研究生国家奖学金}{}
+\datedline{浙江工业大学2015年信息工程学院三好研究生}{}
+
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\begin{thebibliography}{5}\small
+	
+\bibitem{1}
+Haoran Liang, Guodao Sun and Ronghua Liang, 
+\emph{``Looking into Saliency	Model via Space-Time Visualization"},
+IEEE Transactions on Multimedia (T-MM), 2016. Acceptance.
+	
+\bibitem{2}
+Haoran Liang, Ronghua Liang, et.al.,
+\emph{``Coupled Dictionary Learning for Detail Enhanced 3-D Facial Expression Synthesis"},
+IEEE Transactions on Cybernetics (T-CYB), 2015.		
+
+
+\bibitem{3}
+Haoran Liang, Mingli Song and Ronghua Liang
+\emph{``Face Sketch Synthesis based on Rough Drawing"},
+Journal of Computer Aided Design and Computer Graphics (JCAD\&CG), 2014.
+
+\bibitem{4}
+Haoran Liang, Mingli Song, et.al.,
+\emph{``Personalized 3-D Facial Expreesion Synthesis based on Landmark Constraint"},
+Asia-Pacific Signal and Information Processing Association (APSIPA), 2013.
+\end{thebibliography}
+\end{document}
